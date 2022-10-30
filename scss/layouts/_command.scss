@@ -1,0 +1,37 @@
+.command {
+    background-color: var(--command-backgroud);
+}
+
+.command__list {
+    display: flex;
+    gap: 30px;
+}
+
+.command__item {
+    background: var(--main-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 90px) / 4);
+}
+
+.command__card {
+    padding: 30px 0;
+}
+
+.command__name {
+    font-weight: 500;
+    font-size: var(--first-font-size);
+    line-height: var(--typical-lh);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.command__position {
+    font-size: var(--first-font-size);
+    line-height: 1.19;
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 16px;
+}

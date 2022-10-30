@@ -1,0 +1,66 @@
+.check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.check--bottom {
+    margin-bottom: 30px;
+}
+
+.check__label {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: var(--label-color);
+}
+
+.check__input {
+    display: inline-block;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.check__icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid;
+    border-radius: 3px;
+    margin-right: 8px;
+    position: relative;
+    .check__input:checked + & {
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
+    }
+    .check__input:focus + & {
+        border-color: var(--accent-color);
+    }
+}
+
+.check__icon--normal {
+    border-color: #212121;
+    background-color: #FFFFFF;
+}
+
+.check__point {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.check__link--accent {
+    color: var(--accent-color);
+}

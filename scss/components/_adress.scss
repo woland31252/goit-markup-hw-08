@@ -1,0 +1,31 @@
+.adress__list {
+    line-height: 1.71;
+}
+
+.adress--top {
+    margin-top: 20px;
+}
+
+.adress__geolink {
+    color: var(--footer-adresscolor);
+}
+
+.adress__item {
+    margin-bottom: 9px;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.adress__link {
+    color: rgba(255, 255, 255, 0.6);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}

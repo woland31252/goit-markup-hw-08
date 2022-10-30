@@ -1,0 +1,42 @@
+.button {
+    font-weight: 700;
+    font-size: var(--first-font-size);
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--main-color);
+    background: var(--button-color);
+    border-radius: 4px;
+    border: none;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus,
+    &:hover {
+        background-color: #188CE8;
+    }
+}
+
+.button--size-s {
+    padding: 10px 0;
+    width: 216px;
+}
+
+.button--size-m {
+    padding: 10px 0;
+    width: 200px;
+}
+
+.button--content-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+/* .button--accent {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+} */
