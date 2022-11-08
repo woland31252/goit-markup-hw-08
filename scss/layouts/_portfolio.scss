@@ -1,28 +1,70 @@
 
 .button-list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     gap: 8px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    
+    @include mobile {
+        gap: 15px 8px;
+        margin-bottom: 40px;
+    }
+    
+    @include tablet {
+        justify-content: center;
+        margin-bottom: 30px;
+        gap: 8px;
+    }
+    
+    @include desktop {
+        margin-bottom: 50px;
+    }
 }
 
 .button-title {
-    padding: 6px 22px;
-    &:first-child {
-        padding: 6px 25px;
+    padding: 6px 15px;
+   
+    @include mobile {
+        padding: 6px 22px;
+        &:first-child {
+            padding: 6px 25px;
+        }
     }
 }
 
 .galery-list {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     gap: 30px;
+
+    @include tablet {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
 }
 
 .galery-card {
     border: 1px solid rgba(238, 238, 238, 1);
     padding: 24px 20px;
 }
+
+.galery-card--bottom {
+    padding-bottom: 20px;
+    
+    @include tablet {
+        padding-bottom: 56px;
+    }
+
+    @include desktop {
+        padding-bottom: 20px;
+    }
+
+}
+
+    
+
 
 .galery-title {
     font-size: 18px;
@@ -33,7 +75,20 @@
 }
 
 .galery-item {
-    width: calc((100% - 60px) / 3);
+    // width: calc((100% - 60px) / 3);
+    // width: 100%;
+    // @include mobile {
+    //     width: 450px;
+    // }
+
+    @include tablet {
+        // width: 354px;
+        @include calc (2);
+    }
+
+    @include desktop {
+        @include calc (3);
+    }
 }
 
 .galery-link {
@@ -44,6 +99,7 @@
     &:hover {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
+    
 }
 
 .galery-text {
@@ -55,12 +111,17 @@
 .galery-image {
     position: relative;
     overflow: hidden;
+    // width: 100%;
+   
+    
 }
 
 .galery-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
+    // width: 100vw;
+    // height: 100vh;
     bottom: 0;
     right: 0;
     transform: translateY(100%);
@@ -71,6 +132,10 @@
     .galery-link:hover & {
         transform: translateY(0);
     }
+
+    @include tablet {
+        overflow: hidden;
+    }
 }
 
 .galery-overlay-content {
@@ -78,6 +143,10 @@
     line-height: 1.56;
     letter-spacing: 0.03em;
     color: var(--main-color);
-    padding: 63px 24px;
+    padding: 77px 24px;
     background: rgba(33, 150, 243, 0.9);
+
+    @include tablet {
+        padding: 63px 24px;
+    }
 }

@@ -1,10 +1,19 @@
 .title {
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
+    
+    @include desktop {
+        font-size: 36px;
+        line-height: 1.17;
+    }
 }
 
 .title--theme {
     color: var(--second-title-color);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    
+    @include desktop {
+        margin-bottom: 50px;
+    }
 }

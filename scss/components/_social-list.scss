@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     gap: 10px;
+    margin-bottom: 60px;
 }
 
 .social-list__icon {
@@ -18,11 +19,19 @@
     transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
     &:focus {
         background-color: var(--accent-color);
         color: var(--main-color);
     }
+
+    @include desktop {
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+            color: var(--main-color);
+        }
+    }
+    
 }
 
 .social-list__link--theme-s {

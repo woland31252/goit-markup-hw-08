@@ -63,6 +63,77 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="mob-open" data-menu-open>
+          <svg class="mob-open__icon" width="40" height="40">
+            <use href="./img/symbol-defs.svg#icon-mob-menu-open"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-container">
+        <div class="mob-menu is-hidden" data-menu>
+          <div class="mob-menu__top">
+            <button type="button" class="mob-close" data-menu-close>
+            <svg class="mob-close__icon" width="40" height="40">
+              <use href="./img/symbol-defs.svg#icon-mob-menu-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu__list list">
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link " href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link mob-menu__link--accent" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link" href="">Контакти</a>
+            </li>
+          </ul>
+          </div>
+          <div class="mob-menu__bottom">
+            <div class="mob-contacts">
+            <a href="tel:+380961111111" class="mob-contacts__tel link">
+              +38 096 111 11 11
+            </a>
+            <a href="mailto:info@devstudio.com" class="mob-contacts__mail link"
+              >info@devstudio.com
+            </a>
+          </div>
+          <div class="mob-social">
+            <a
+              class="mob-social__link link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >Instagram</a
+            >
+            <a
+              class="mob-social__link link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >Twitter</a
+            >
+            <a
+              class="mob-social__link link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >Facebook</a
+            >
+            <a
+              class="mob-social__link link mob-social__link--margin-not"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >Linkedin</a
+            >
+          </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -90,12 +161,34 @@
             <li class="galery-item">
               <a href="" class="galery-link link">
                 <div class="galery-image">
-                  <img
-                    src="./img/portf-1.jpeg"
-                    alt="Монітор ноутбука"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio/portf-1_1x.jpeg 1x,
+                        ./img/portfolio/portf-1_2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/portf-1_tablet_1x.jpeg 1x,
+                        ./img/portfolio/portf-1_tablet_2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/portf-1_mob_1x.jpeg 1x,
+                        ./img/portfolio/portf-1_mob_2x.jpeg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./img/portfolio/portf-1_1x.jpeg"
+                      alt="Монітор ноутбука"
+                      width="450"
+                    />
+                  </picture>
                   <div class="galery-overlay">
                     <p class="galery-overlay-content">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -105,7 +198,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="galery-card">
+                <div class="galery-card galery-card--bottom">
                   <h3 class="galery-title">Технокряк</h3>
                   <p class="galery-text">Веб-сайт</p>
                 </div>
@@ -114,12 +207,34 @@
             <li class="galery-item">
               <a href="" class="galery-link link">
                 <div class="galery-image">
-                  <img
-                    src="./img/portf-2.jpeg"
-                    alt="два баскетболісти"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio/portf-2_1x.jpeg 1x,
+                        ./img/portfolio/portf-2_2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/portf-2_tablet_1x.jpeg 1x,
+                        ./img/portfolio/portf-2_tablet_2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/portf-2_mob_1x.jpeg 1x,
+                        ./img/portfolio/portf-2_mob_2x.jpeg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./img/portfolio/portf-2_1x.jpeg"
+                      alt="два баскетболісти"
+                      width="450"
+                    />
+                  </picture>
                   <div class="galery-overlay">
                     <p class="galery-overlay-content">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -140,12 +255,34 @@
             <li class="galery-item">
               <a href="" class="galery-link link">
                 <div class="galery-image">
-                  <img
-                    src="./img/portf-3.jpeg"
-                    alt="Логотип ресторану"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio/portf-3_1x.jpeg 1x,
+                        ./img/portfolio/portf-3_2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/portf-3_tablet_1x.jpeg 1x,
+                        ./img/portfolio/portf-3_tablet_2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/portf-3_mob_1x.jpeg 1x,
+                        ./img/portfolio/portf-3_mob_2x.jpeg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./img/portfolio/portf-3_1x.jpeg"
+                      alt="Логотип ресторану"
+                      width="450"
+                    />
+                  </picture>
                   <div class="galery-overlay">
                     <p class="galery-overlay-content">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -166,12 +303,34 @@
             <li class="galery-item">
               <a href="" class="galery-link link">
                 <div class="galery-image">
-                  <img
-                    src="./img/portf-4.jpeg"
-                    alt="Навушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio/portf-4_1x.jpeg 1x,
+                        ./img/portfolio/portf-4_2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/portf-4_tablet_1x.jpeg 1x,
+                        ./img/portfolio/portf-4_tablet_2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/portf-4_mob_1x.jpeg 1x,
+                        ./img/portfolio/portf-4_mob_2x.jpeg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./img/portfolio/portf-4_1x.jpeg"
+                      alt="Навушники"
+                      width="450"
+                    />
+                  </picture>
                   <div class="galery-overlay">
                     <p class="galery-overlay-content">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -192,12 +351,34 @@
             <li class="galery-item">
               <a href="" class="galery-link link">
                 <div class="galery-image">
-                  <img
-                    src="./img/portf-5.jpeg"
-                    alt="Дві коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio/portf-5_1x.jpeg 1x,
+                        ./img/portfolio/portf-5_2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/portf-5_tablet_1x.jpeg 1x,
+                        ./img/portfolio/portf-5_tablet_2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/portf-5_mob_1x.jpeg 1x,
+                        ./img/portfolio/portf-5_mob_2x.jpeg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./img/portfolio/portf-5_1x.jpeg"
+                      alt="Дві коробки"
+                      width="450"
+                    />
+                  </picture>
                   <div class="galery-overlay">
                     <p class="galery-overlay-content">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -218,12 +399,34 @@
             <li class="galery-item">
               <a href="" class="galery-link link">
                 <div class="galery-image">
-                  <img
-                    src="./img/portf-6.jpeg"
-                    alt="Монітор компьютера"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio/portf-6_1x.jpeg 1x,
+                        ./img/portfolio/portf-6_2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/portf-6_tablet_1x.jpeg 1x,
+                        ./img/portfolio/portf-6_tablet_2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/portf-6_mob_1x.jpeg 1x,
+                        ./img/portfolio/portf-6_mob_2x.jpeg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./img/portfolio/portf-6_1x.jpeg"
+                      alt="Монітор компьютера"
+                      width="450"
+                    />
+                  </picture>
                   <div class="galery-overlay">
                     <p class="galery-overlay-content">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -244,12 +447,34 @@
             <li class="galery-item">
               <a href="" class="galery-link link">
                 <div class="galery-image">
-                  <img
-                    src="./img/portf-7.jpeg"
-                    alt="Розкритий журнал"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio/portf-7_1x.jpeg 1x,
+                        ./img/portfolio/portf-7_2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/portf-7_tablet_1x.jpeg 1x,
+                        ./img/portfolio/portf-7_tablet_2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/portf-7_mob_1x.jpeg 1x,
+                        ./img/portfolio/portf-7_mob_2x.jpeg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./img/portfolio/portf-7_1x.jpeg"
+                      alt="Розкритий журнал"
+                      width="450"
+                    />
+                  </picture>
                   <div class="galery-overlay">
                     <p class="galery-overlay-content">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -270,12 +495,34 @@
             <li class="galery-item">
               <a href="" class="galery-link link">
                 <div class="galery-image">
-                  <img
-                    src="./img/portf-8.jpeg"
-                    alt="Ярлик"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                    ./img/portfolio/portf-8_1x.jpeg 1x,
+                    ./img/portfolio/portf-8_2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                    ./img/portfolio/portf-8_tablet_1x.jpeg 1x,
+                    ./img/portfolio/portf-8_tablet_2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                      ./img/portfolio/portf-8_mob_1x.jpeg 1x,
+                      ./img/portfolio/portf-8_mob_2x.jpeg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./img/portfolio/portf-8_1x.jpeg"
+                      alt="Ярлик"
+                      width="450"
+                    />
+                  </picture>
                   <div class="galery-overlay">
                     <p class="galery-overlay-content">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -296,12 +543,34 @@
             <li class="galery-item">
               <a href="" class="galery-link link">
                 <div class="galery-image">
-                  <img
-                    src="./img/portf-9.jpeg"
-                    alt="Ноутбук"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio/portf-9_1x.jpeg 1x,
+                        ./img/portfolio/portf-9_2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/portf-9_tablet_1x.jpeg 1x,
+                        ./img/portfolio/portf-9_tablet_2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/portf-9_mob_1x.jpeg 1x,
+                        ./img/portfolio/portf-9_mob_2x.jpeg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./img/portfolio/portf-9_1x.jpeg"
+                      alt="Ноутбук"
+                      width="450"
+                    />
+                  </picture>
                   <div class="galery-overlay">
                     <p class="galery-overlay-content">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -409,5 +678,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

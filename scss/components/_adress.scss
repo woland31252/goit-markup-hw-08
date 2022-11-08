@@ -11,10 +11,12 @@
 }
 
 .adress__item {
-    margin-bottom: 9px;
+    // margin-bottom: 9px;
+    margin-bottom: 8px;
 
     &:last-child {
-        margin: 0;
+        // margin: 0;
+        margin-bottom: 60px;
     }
 }
 
@@ -24,8 +26,11 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
+    @include desktop {
+        &:hover,
+        &:focus {
         color: var(--accent-color);
+    }   
     }
+    
 }

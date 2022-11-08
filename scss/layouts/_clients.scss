@@ -1,6 +1,14 @@
 .clients__list {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.clients__item {
+    // @media screen and (min-width: 480px) {
+    //     width: calc((100% - 30px) / 2);
+    // }
 }
 
 .clients__icon {
@@ -9,7 +17,7 @@
 
 .clients__link {
     display: flex;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid var(--link-color);
     border-radius: 4px;
@@ -19,10 +27,20 @@
     transition-property: color, border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
     &:focus {
         border-color: var(--accent-color);
         color: var(--accent-color);
+    }
+    @include tablet {
+        width: 226px;
+    }
+    @include desktop {
+        width: 170px;
+        &:hover,
+        &:focus {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+        }
     }
 }
 

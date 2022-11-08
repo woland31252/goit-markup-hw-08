@@ -14,11 +14,15 @@
     &:hover {
         background-color: #188CE8;
     }
+    
 }
 
 .button--size-s {
     padding: 10px 0;
     width: 216px;
+    @include desktop {
+        width: 200px;
+    }
 }
 
 .button--size-m {

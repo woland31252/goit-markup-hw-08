@@ -1,11 +1,15 @@
 
 .form__title {
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     color: var(--second-title-color);
     width: 100%;
     text-align: center;
     margin-bottom: 12px;
+
+    @include desktop {
+        line-height: 1.15;
+    }
 }
 
 .form__item {
