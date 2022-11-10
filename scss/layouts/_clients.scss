@@ -6,6 +6,15 @@
 }
 
 .clients__item {
+    @include calc (2);
+
+    @include tablet {
+        @include calc (3)
+    }
+
+    @include desktop {
+        @include calc (6)
+    }
     // @media screen and (min-width: 480px) {
     //     width: calc((100% - 30px) / 2);
     // }
@@ -17,7 +26,8 @@
 
 .clients__link {
     display: flex;
-    width: 210px;
+    width: 100%;
+    // width: 210px;
     height: 92px;
     border: 1px solid var(--link-color);
     border-radius: 4px;
@@ -31,6 +41,11 @@
         border-color: var(--accent-color);
         color: var(--accent-color);
     }
+
+    @include mobile {
+        width: 210px;
+    }
+
     @include tablet {
         width: 226px;
     }

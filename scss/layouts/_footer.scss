@@ -5,10 +5,17 @@
 
 .footer__content {
     margin-bottom: 60px;
+
+    @include desktop {
+        margin-bottom: 0;
+    }
 }
 
 .footer__social {
     margin-bottom: 60px;
+    @include tablet {
+        margin-bottom: 0;
+    }
 }
 
 .footer__title {

@@ -8,7 +8,7 @@
 
   refs.openMenuBtn.addEventListener('click', toggleMenu);
   refs.closeMenuBtn.addEventListener('click', toggleMenu);
-  // refs.menuList.addEventListener('click', removeMenu);
+  refs.menuList.addEventListener('click', removeMenu);
 
   function toggleMenu() {
     refs.menu.classList.toggle('is-hidden');
